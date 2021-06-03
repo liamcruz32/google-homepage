@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+</head>
+
+<style>
+        body {
+                height: 100vh;
+                margin: 0;
+                font-family: 'Open Sans', sans-serif;
+        }
+        header {
+                top: 0;
+                position: fixed;
+                display: flex;
+                margin: 10px;
+                flex-direction: row;
+                width: 100%;
+        }
+        
+        nav {
+                display: flex;
+                width: 100%;
+                height: 40px;
+                align-items: center;
+        }
+        nav div {
+                display: flex;
+                width: 50%;
+                padding: 15px;
+                align-items: center;
+        }
+
+        nav div:nth-child(1) {
+                justify-content: flex-start;
+        }
+        nav div:nth-child(2) {
+                justify-content: flex-end;
+                text-align: right;
+        }
+        nav div a {
+                text-decoration: none;
+                font-size: 12px;
+                padding: 10px;
+                color: black;
+        }
+        nav div a:hover {
+                text-decoration: underline;
+        }
+        main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                padding-top: 150px;
+        }
+        button {
+                margin: 7px;
+        }
+</style>
+
+<body>
+        <header>
+                <nav>
+                        <div>
+                                <a href='#'>About</a>
+                                <a href='#'>Store</a>
+                        </div>
+                        <div>
+                                <a href='#'>Gmail</a>
+                                <a href='#'>Images</a>
+                                <a href='#'><img style="border-radius: 50%" src='https://lh3.googleusercontent.com/ogw/ADGmqu-q-GMgnjKkMU3cwbZKvkTl9LxoN6GBsCAFjUTL8Q=s32-c-mo'></a>
+                        </div>
+                </nav>
+        </header>
+        <main>
+                <a href='#'><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></a>
+                <div style="padding-top: 25px">
+                        <form id='search'>
+                                <input type="text" size="70">
+                        </form>
+                </div>
+                <div style="padding-top: 20px;">
+                        <button type="submit">Google Search</button>
+                        <button type="submit">I'm feeling lucky</button>
+                </div>
+        </main>
+</body>
